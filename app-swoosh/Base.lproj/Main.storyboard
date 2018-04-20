@@ -112,6 +112,10 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.94047858149999997" green="1" blue="0.99203818340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="jhj-Ps-Qza" eventType="touchUpInside" id="dgt-QL-BPM"/>
+                                            <action selector="womentstapppdsf:" destination="jhj-Ps-Qza" eventType="touchUpInside" id="F5m-in-YhK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyk-Qg-bRe" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="101.99999999999997" width="414" height="36"/>
@@ -120,6 +124,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.94047858149999997" green="1" blue="0.99203818340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="jhj-Ps-Qza" eventType="touchUpInside" id="eH3-Mi-xXw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -147,6 +154,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.94047858149999997" green="1" blue="0.99203818340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="jhj-Ps-Qza" eventType="touchUpInside" id="biR-bw-RTJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-J2-0wH">
                                 <rect key="frame" x="10" y="10" width="29" height="24"/>
@@ -182,6 +192,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aR5-hp-FEc"/>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="Ylg-gt-c91" id="7wh-lp-Pzg"/>
+                        <outlet property="onMensTapped" destination="7p3-Ua-WYI" id="fIx-pI-zkV"/>
+                        <outlet property="onWomensTApped" destination="7p3-Ua-WYI" id="dLW-3l-yPd"/>
+                        <outlet property="onWomensTapped" destination="dFT-FU-8ra" id="fDF-oC-NvD"/>
+                        <segue destination="ZR3-We-JR3" kind="show" identifier="skillVCSegue" id="VzO-eF-MdU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aP-RM-B1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="IPs-wx-7Gy" userLabel="Exit" sceneMemberID="exit"/>
